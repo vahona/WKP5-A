@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WKP5</title>
-	</head>
-	<body>
-		<div class="container"></div>
-		<button class="generate">GENERATE RECIPES</button>
-	</body>
-	<script src="script.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WKP5</title>
+  <style>
+    img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .list_of_info {
+      list-style: none;
+      display: flex;
+      padding: 1rem;
+
+
+
+    }
+
+    .recipe_info {
+      background-color: wheat;
+    }
+
+    .information_difficulty,
+    .information_timing {
+      margin-inline-start: 1rem;
+    }
+
+    .container {
+      background-color: gainsboro;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+
+    }
+
+    button {
+      padding-inline-end: 2rem;
+      padding-inline-end: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  </div>
+  <button class="generate">GENERATE RECIPES</button>
+  <div class="outer-modal">
+    <div class="inner-modal"></div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
 </html>
