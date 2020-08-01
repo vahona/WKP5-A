@@ -9,15 +9,25 @@
     img {
       width: 50%;
       height: 50%;
+      margin-inline-start: 2rem;
     }
 
     .list_of_info {
       list-style: none;
       display: flex;
       padding: 1rem;
+      margin-inline-start: 2rem;
 
 
 
+    }
+
+    h4 {
+      margin-inline-start: 2rem;
+    }
+
+    .list_of_info {
+      margin-inline-start: 0;
     }
 
     .recipe_info {
@@ -29,20 +39,48 @@
       margin-inline-start: 1rem;
     }
 
-    .container {
-      background-color: gainsboro;
-    }
 
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
+      background-color: gainsboro;
+
 
     }
 
     button {
       padding-inline-end: 2rem;
       padding-inline-end: 1rem;
+    }
+
+    .outer-modal {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+      opacity: 0;
+      overflow: scroll;
+    }
+
+    .inner-modal {
+      background: white;
+      min-width: 300px;
+      min-height: 400px;
+      padding: 2rem;
+      border-radius: 5px;
+      max-width: 500px;
+    }
+
+    .outer-modal.open {
+      pointer-events: all;
+      opacity: 1;
     }
   </style>
 </head>
@@ -57,5 +95,8 @@
 
 </body>
 <script src="script.js"></script>
+
+
+</div>
 
 </html>
